@@ -19,7 +19,7 @@ const SignInForm = () => {
         try {
             payload.email = payload.email.toLowerCase()
             const res = await login(payload);
-            if (res?.status === STATUS.SUCCESS) {
+            if (res?.status?.toLowerCase() === STATUS.SUCCESS) {
                 dispatch(addUser(res?.data));
                 navigate(UI_ENDPOINTS.RECIPES_LIST);
                 localStorage.setItem("accessToken", res?.data?.access)
