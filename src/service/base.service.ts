@@ -6,7 +6,7 @@ class BaseAxios {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: "http://13.201.247.48/api/"
+      baseURL: "http://127.0.0.1:8000/api/"
     });
 
     // Set up a request interceptor to attach the access token to requests
