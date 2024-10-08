@@ -23,6 +23,10 @@ install the dependencies using the below command
 ```
 npm install
 ```
+or 
+```
+npm install -f
+```
 
 ### Step 3: Start The Project in Local
 run the project using the below command
